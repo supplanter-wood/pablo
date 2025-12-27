@@ -1,0 +1,22 @@
+{
+  "name": "@pablo/tests",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:unit": "vitest run unit",
+    "test:integration": "vitest run integration",
+    "test:e2e": "vitest run e2e"
+  },
+  "dependencies": {
+    "@pablo/shared": "workspace:*",
+    "@pablo/server": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.4",
+    "vitest": "^1.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
+

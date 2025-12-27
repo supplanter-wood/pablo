@@ -1,0 +1,30 @@
+{
+    "name": "@pablo/server",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "./dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "typecheck": "tsc --noEmit",
+        "start": "node dist/index.js"
+    },
+    "dependencies": {
+        "@pablo/shared": "workspace:*",
+        "colyseus": "^0.15",
+        "@colyseus/schema": "^1.0",
+        "seedrandom": "^3.0",
+        "pino": "^9.0",
+        "supabase-js": "^2.40",
+        "dotenv": "^16.4",
+        "zod": "^3.23",
+        "uuid": "^9.0",
+        "colyseus-monitor": "^0.15.0",
+        "ws": "^8.17.0"
+    },
+    "devDependencies": {
+        "typescript": "^5.4",
+        "ts-node": "^10.9.2",
+        "nodemon": "^3.0.3",
+        "jest": "^29.7.0"
+    }
+}

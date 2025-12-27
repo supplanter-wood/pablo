@@ -1,0 +1,27 @@
+{
+  "name": "pablo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:server": "pnpm --filter server dev",
+    "dev:client": "pnpm --filter client dev",
+    "dev": "concurrently 'pnpm dev:server' 'pnpm dev:client'",
+    "test": "pnpm --filter tests test",
+    "build": "pnpm --parallel build",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.26.2",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.7.4",
+    "turbo": "^2.7.2",
+    "typescript": "^5.9.3"
+  }
+}

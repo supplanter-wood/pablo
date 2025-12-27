@@ -1,0 +1,16 @@
+{
+  "name": "@pablo/shared",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "typescript": "^5.4",
+    "zod": "^3.23",
+    "@colyseus/schema": "^1.0"
+  }
+}
