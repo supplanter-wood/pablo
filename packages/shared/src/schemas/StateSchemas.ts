@@ -23,7 +23,6 @@ export class PublicPlayer extends Schema {
     @type("string") name: string = "";
     @type("boolean") connected: boolean = true;
     @type("boolean") ready: boolean = false;
-    @type("number") sessionId: number = 0;
     @type([PublicCardPlaceholder]) grid = new ArraySchema<PublicCardPlaceholder>();
     @type("number") gridSize: number = 4;
     @type("number") totalScore: number = 0;
@@ -66,3 +65,4 @@ export class GameState extends Schema {
     @type(PublicRoundContext) roundContext = new PublicRoundContext();
     @type(PublicScoreboard) scoreboard = new PublicScoreboard();
 }
+

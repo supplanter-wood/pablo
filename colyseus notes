@@ -1,0 +1,10 @@
+Configure WebSocket transport or Express middleware to include
+
+origin: "http://localhost:5173",
+methods: ["GET", "POST"],
+allowedHeaders: ["*"],
+credentials: true
+
+
+Client can connect from browser console:
+new Colyseus.Client("ws://localhost:2567").joinOrCreate("pablo")
